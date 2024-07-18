@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 1000px;
+}
+
+.All {
+  display: flex;
+  justify-content: center;
+}
+.All .searchPart {
+  text-align: center;
+}
+.All .searchPart h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 80px;
+  color: goldenrod;
+}
+.All .searchPart .search {
+  display: flex;
+  position: relative;
+}
+.All .searchPart .search .searchInput, .All .searchPart .search .searchInput2 {
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 300px;
+  border-radius: 0 30px 30px 0;
+  transition: all 0.1s ease;
+  background: rgba(233, 233, 233, 0.2901960784);
+}
+.All .searchPart .search .searchInput2 {
+  border-radius: 0 20px 0 0;
+  border: solid rgba(46, 100, 207, 0.32);
+  border-left: none;
+}
+.All .searchPart .search .searchIcon, .All .searchPart .search .searchIcon2 {
+  border-radius: 30px 0 0 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: rgba(122, 122, 122, 0.4352941176);
+  transition: all 0.1s ease;
+  background: rgba(233, 233, 233, 0.2901960784);
+}
+.All .searchPart .search .searchIcon i, .All .searchPart .search .searchIcon2 i {
+  transition: all 0.5s ease;
+}
+.All .searchPart .search .searchIcon2 {
+  border-radius: 20px 0 0 0;
+  border: solid rgba(46, 100, 207, 0.32);
+  border-right: none;
+  color: goldenrod;
+}
+.All .searchPart .search .searchIcon2 i {
+  transform: rotate(360deg);
+  box-shadow: 0 0 5px 1px rgba(174, 174, 174, 0.4666666667);
+  padding: 5px;
+}
+.All .searchPart .search #allCitys {
+  display: none;
+  transition: all 0.1s ease;
+}
+.All .searchPart .search #allCitys2 {
+  transition: all 0.1s ease;
+  position: absolute;
+  top: 47px;
+  width: 364px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0px;
+  max-height: 200px;
+  overflow: scroll;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  box-shadow: 0 0 5px 2px rgba(174, 174, 174, 0.4666666667);
+}
+.All .searchPart .search #allCitys2 .choseCity {
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(79, 79, 79);
+}
+.All .searchPart .search #allCitys2 .choseCity:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
+.All .searchPart #notFound {
+  text-align: start;
+}
+.All .Data {
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 0 5px 1px rgba(174, 174, 174, 0.4666666667);
+  padding-bottom: 30px;
+}
+.All .Data div {
+  width: 338px;
+  height: 50px;
+  background-color: rgba(233, 233, 233, 0.2901960784);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.7254901961);
+}
+.All .Data div h3 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgb(68, 68, 68);
+}
+.All .Data div img {
+  width: 50px;
+  margin-left: 15px;
+}
+.All .Data h1 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.All .Data p {
+  color: #636363;
+}
+
+@media only screen and (max-width: 768px) {
+  .All {
+    display: flex;
+    justify-content: center;
+  }
+  .All .searchPart {
+    text-align: center;
+  }
+  .All .searchPart h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 80px;
+    color: goldenrod;
+  }
+  .All .searchPart .search {
+    justify-content: center;
+  }
+  .All .searchPart .search .searchInput, .All .searchPart .search .searchInput2 {
+    width: 250px;
+  }
+  .All .searchPart .search #allCitys2 {
+    width: 299px;
+  }
+  .All .Data {
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 0 5px 1px rgba(174, 174, 174, 0.4666666667);
+    padding-bottom: 30px;
+  }
+  .All .Data div {
+    width: 290px;
+    height: 50px;
+    background-color: rgba(233, 233, 233, 0.2901960784);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.7254901961);
+  }
+  .All .Data div h3 {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(68, 68, 68);
+  }
+  .All .Data h1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  .All .Data p {
+    color: #636363;
+  }
+}/*# sourceMappingURL=style.css.map */

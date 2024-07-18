@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <title>Weather app</title>
+</head>
+<body>
+    <section class="All">
+        <div>
+            <div class="searchPart">
+                <h1 class="header">Weather</h1>
+                <p id="notFound"></p>
+                <div class="search">
+                    <a class="searchIcon" href="#" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <input class="searchInput" type="text" placeholder="Enter city name...">
+                    <div id="allCitys">
+                        <button class="choseCity">Åland Islands</button>
+                        <button class="choseCity">Albania</button>
+                        <button class="choseCity">Algeria</button>
+                        <button class="choseCity">America</button>
+                        <button class="choseCity">American Samoa</button>
+                        <button class="choseCity">Andorra</button>
+                        <button class="choseCity">Angola</button>
+                        <button class="choseCity">Anguilla</button>
+                        <button class="choseCity">Antarctica</button>
+                        <button class="choseCity">Antigua and Barbuda</button>
+                        <button class="choseCity">Argentina</button>
+                        <button class="choseCity"> Aruba</button>
+                        <button class="choseCity">Australia</button>
+                        <button class="choseCity">Australia</button>
+                        <button class="choseCity">Austria</button>
+                        <button class="choseCity">Azerbaijan</button>
+                        <button class="choseCity">Bahrain</button>
+                        <button class="choseCity">Bangladesh</button>
+                        <button class="choseCity">Barbados</button>
+                        <button class="choseCity">Belarus</button>
+                        <button class="choseCity">Belgium</button>
+                        <button class="choseCity">Belize</button>
+                        <button class="choseCity">Benin</button>
+                        <button class="choseCity">Bhutan</button>
+                        <button class="choseCity">Bolivia</button>
+                        <button class="choseCity">Botswana</button>
+                        <button class="choseCity">Brazil</button>
+                        <button class="choseCity">Brunei</button>
+                        <button class="choseCity">Bulgaria</button>
+                        <button class="choseCity">Burkina Faso</button>
+                        <button class="choseCity">Burundi</button>
+                        <button class="choseCity">Cabo Verde</button>
+                        <button class="choseCity">Cambodia</button>
+                        <button class="choseCity">Cameroon</button>
+                        <button class="choseCity">Canada</button>
+                        <button class="choseCity">Central African Republic</button>
+                        <button class="choseCity">Chad</button>
+                        <button class="choseCity">Chile</button>
+                        <button class="choseCity">China</button>
+                        <button class="choseCity">Colombia</button>
+                        <button class="choseCity">Comoros</button>
+                        <button class="choseCity">Costa Rica</button>
+                        <button class="choseCity">Croatia</button>
+                        <button class="choseCity">Cuba</button>
+                        <button class="choseCity">Cyprus</button>
+                        <button class="choseCity">Czech Republic</button>
+                        <button class="choseCity">Denmark</button>
+                    
+                        <button class="choseCity">Djibouti</button>
+                    
+                        <button class="choseCity">Dominica</button>
+                    
+                        <button class="choseCity">Dominican Republic</button>
+                    
+                        <button class="choseCity">Ecuador</button>
+                    
+                        <button class="choseCity">Egypt</button>
+                    
+                        <button class="choseCity">El Salvador</button>
+                    
+                        <button class="choseCity">Equatorial Guinea</button>
+                    
+                        <button class="choseCity">Eritrea</button>
+                    
+                        <button class="choseCity">Estonia</button>
+                    
+                        <button class="choseCity">Eswatini</button>
+                    
+                        <button class="choseCity">Ethiopia</button>
+                    
+                        <button class="choseCity">Fiji</button>
+                    
+                        <button class="choseCity">Finland</button>
+                    
+                        <button class="choseCity">France</button>
+                    
+                        <button class="choseCity">Gabon</button>
+                    
+                        <button class="choseCity">The Gambia</button>
+                    
+                        <button class="choseCity">Georgia</button>
+                    
+                        <button class="choseCity">Germany</button>
+                    
+                        <button class="choseCity">Ghana</button>
+                    
+                        <button class="choseCity">Greece</button>
+                    
+                        <button class="choseCity">Grenada</button>
+                    
+                        <button class="choseCity">Guatemala</button>
+                    
+                        <button class="choseCity">Guinea</button>
+                    
+                        <button class="choseCity">Guinea-Bissau</button>
+                    
+                        <button class="choseCity">Guyana</button>
+                    
+                        <button class="choseCity">Haiti</button>
+                    
+                        <button class="choseCity">Honduras</button>
+                    
+                        <button class="choseCity">Hungary</button>
+                    
+                        <button class="choseCity">Iceland</button>
+                    
+                        <button class="choseCity">India</button>
+                    
+                        <button class="choseCity">Indonesia</button>
+                    
+                        <button class="choseCity">Iran</button>
+                    
+                        <button class="choseCity">Iraq</button>
+                    
+                        <button class="choseCity">Ireland</button>
+                    
+                        <button class="choseCity">Italy</button>
+                    
+                        <button class="choseCity">Jamaica</button>
+                    
+                        <button class="choseCity">Japan</button>
+                    
+                        <button class="choseCity">Jordan</button>
+                    
+                        <button class="choseCity">Kazakhstan</button>
+                    
+                        <button class="choseCity">Kenya</button>
+                    
+                        <button class="choseCity">Kiribati</button>
+                    
+                        <button class="choseCity">Korea, North</button>
+                    
+                        <button class="choseCity">Korea, South</button>
+                    
+                        <button class="choseCity">Kosovo</button>
+                    
+                        <button class="choseCity">Kuwait</button>
+                    
+                        <button class="choseCity">Kyrgyzstan</button>
+                    
+                        <button class="choseCity">Laos</button>
+                    
+                        <button class="choseCity">Latvia</button>
+                    
+                        <button class="choseCity">Lebanon</button>
+                    
+                        <button class="choseCity">Lesotho</button>
+                    
+                        <button class="choseCity">Liberia</button>
+                    
+                        <button class="choseCity">Libya</button>
+                    
+                        <button class="choseCity">Liechtenstein</button>
+                    
+                        <button class="choseCity">Lithuania</button>
+                    
+                        <button class="choseCity">Luxembourg</button>
+                    
+                        <button class="choseCity">Madagascar</button>
+                    
+                        <button class="choseCity">Malawi</button>
+                    
+                        <button class="choseCity">Malaysia</button>
+                    
+                        <button class="choseCity">Maldives</button>
+                    
+                        <button class="choseCity">Mali</button>
+                    
+                        <button class="choseCity">Malta</button>
+                    
+                        <button class="choseCity">Marshall Islands</button>
+                    
+                        <button class="choseCity">Mauritania</button>
+                    
+                        <button class="choseCity">Mauritius</button>
+                    
+                        <button class="choseCity">Mexico</button>
+                    
+                        <button class="choseCity">Moldova</button>
+                    
+                        <button class="choseCity">Monaco</button>
+                    
+                        <button class="choseCity">Mongolia</button>
+                    
+                        <button class="choseCity">Montenegro</button>
+                    
+                        <button class="choseCity">Morocco</button>
+                    
+                        <button class="choseCity">Mozambique</button>
+                    
+                        <button class="choseCity">Namibia</button>
+                    
+                        <button class="choseCity">Nauru</button>
+                    
+                        <button class="choseCity">Nepal</button>
+                    
+                        <button class="choseCity">Netherlands</button>
+                    
+                        <button class="choseCity">New Zealand</button>
+                    
+                        <button class="choseCity">Nicaragua</button>
+                    
+                        <button class="choseCity">Niger</button>
+                    
+                        <button class="choseCity">Nigeria</button>
+                    
+                        <button class="choseCity">North Macedonia</button>
+                    
+                        <button class="choseCity">Norway</button>
+                    
+                        <button class="choseCity">Oman</button>
+                    
+                        <button class="choseCity">Pakistan</button>
+                    
+                        <button class="choseCity">Palau</button>
+                    
+                        <button class="choseCity">Panama</button>
+                    
+                        <button class="choseCity">Papua New Guinea</button>
+                    
+                        <button class="choseCity">Paraguay</button>
+                    
+                        <button class="choseCity">Peru</button>
+                    
+                        <button class="choseCity">Philippines</button>
+                    
+                        <button class="choseCity">Poland</button>
+                    
+                        <button class="choseCity">Portugal</button>
+                    
+                        <button class="choseCity">Qatar</button>
+                    
+                        <button class="choseCity">Romania</button>
+                    
+                        <button class="choseCity">Russia</button>
+                    
+                        <button class="choseCity">Rwanda</button>
+                    
+                        <button class="choseCity">Saint Lucia</button>
+                    
+                        <button class="choseCity">Saint Vincent and the Grenadines</button>
+                    
+                        <button class="choseCity">Samoa</button>
+                    
+                        <button class="choseCity">San Marino</button>
+                    
+                        <button class="choseCity">Sao Tome and Principe</button>
+                    
+                        <button class="choseCity">Saudi Arabia</button>
+                    
+                        <button class="choseCity">Senegal</button>
+                    
+                        <button class="choseCity">Serbia</button>
+                    
+                        <button class="choseCity">Seychelles</button>
+                    
+                        <button class="choseCity">Sierra Leone</button>
+                    
+                        <button class="choseCity">Singapore</button>
+                    
+                        <button class="choseCity">Slovakia</button>
+                    
+                        <button class="choseCity">Slovenia</button>
+                    
+                        <button class="choseCity">Solomon Islands</button>
+                    
+                        <button class="choseCity">Somalia</button>
+                    
+                        <button class="choseCity">Spain</button>
+                    
+                        <button class="choseCity">Sri Lanka</button>
+                    
+                        <button class="choseCity">Sudan</button>
+                    
+                        <button class="choseCity">Sudan, South</button>
+                    
+                        <button class="choseCity">Suriname</button>
+                    
+                        <button class="choseCity">Sweden</button>
+                    
+                        <button class="choseCity">Switzerland</button>
+                    
+                        <button class="choseCity">Syria</button>
+                    
+                        <button class="choseCity">Taiwan</button>
+                    
+                        <button class="choseCity">Tajikistan</button>
+                    
+                        <button class="choseCity">Tanzania</button>
+                    
+                        <button class="choseCity">Thailand</button>
+                    
+                        <button class="choseCity">Togo</button>
+                    
+                        <button class="choseCity">Tonga</button>
+                    
+                        <button class="choseCity">Trinidad and Tobago</button>
+                    
+                        <button class="choseCity">Tunisia</button>
+                    
+                        <button class="choseCity">Turkey</button>
+                    
+                        <button class="choseCity">Turkmenistan</button>
+                    
+                        <button class="choseCity">Tuvalu</button>
+                    
+                        <button class="choseCity">Uganda</button>
+                    
+                        <button class="choseCity">Ukraine</button>
+                    
+                        <button class="choseCity">United Arab Emirates</button>
+                    
+                        <button class="choseCity">United Kingdom</button>
+                    
+                        <button class="choseCity">United States</button>
+                    
+                        <button class="choseCity">Uruguay</button>
+                    
+                        <button class="choseCity">Uzbekistan</button>
+                    
+                        <button class="choseCity">Vanuatu</button>
+                    
+                        <button class="choseCity">Vatican City</button>
+                    
+                        <button class="choseCity">Venezuela</button>
+                    
+                        <button class="choseCity">Vietnam</button>
+                    
+                        <button class="choseCity">Yemen</button>
+                    
+                        <button class="choseCity">Zambia</button>
+                    
+                        <button class="choseCity">Zimbabwe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Data">
+                <div>
+                    <h3>----</h3>
+                </div>
+                <h1>----</h1>
+                <p>Temp: --℃</p>
+                <p>Min Temp: --℃</p>
+                <p>Max Temp: --℃</p>
+            </div>            
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
